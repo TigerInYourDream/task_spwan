@@ -1,0 +1,15 @@
+[package]
+name = "task_spwan"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros", "sync", "time"] }
+tokio-stream = "0.1"
+env_logger = "0.10.0"
+log = "0.4.17"
+stock-tool-box = { git = "ssh://git@code.non-convex.com/caoxun/stock-tool-box.git", tag = "v0.0.11" }
+once_cell = "1.5.2"
+dashmap = "5.4.0"
